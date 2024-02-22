@@ -1,3 +1,13 @@
 fernetKey: U3FReXZsVHlUZjVPbEV0R1NPaEhodHRlbDNBQ1FJZHk=
 webserverSecretKey: U3FReXZsVHlUZjVPbEV0R1NPaEhodHRlbDNBQ1FJZHk=
 executor: "KubernetesExecutor"
+
+dags:
+  gitSync:
+    enabled: true
+    repo: https://github.com/fahernkhan/Kubernetes-Airflow-Data-Engineer.git
+    branch: main
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: "airflow_dags/dags"
